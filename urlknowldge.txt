@@ -1,0 +1,4 @@
+An absolute URL - 
+points to another web site (like action="http://www.example.com/example.htm")
+A relative URL - 
+points to a file within a web site (like action="example.htm")

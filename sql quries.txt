@@ -1,0 +1,28 @@
+>>Finding duplicate values in a SQL table
+  
+ SELECT
+    name, salary, COUNT(*)
+FROM
+    employee
+  
+GROUP BY
+    name, salary
+HAVING 
+    COUNT(*) > 1;
+
+>> second max salary
+  
+ select max(salary) from employee where
+  salary<(select max(salary) from employee);
+
+>> 3rd max salary
+  
+  select min(salary) from employee where
+  salary in(select top 3 salary from employee order by desc) 
+
+>> delete dupicate rows
+   insert the distinct rows from the duplicate rows table to 
+   new temporary table. Then delete all the data from duplicate rows  
+   table then insert all data from temporary table which has no duplicates as shown below.
+  
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms and Input</title>
+</head>
+<body>
+   <form >
+       <!-- text -->
+    <div>
+   <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="Suni">  
+    </div>
+    <br>
+     <!-- email type -->
+    <div>
+        <label for="email">Email</label> 
+        <input type="email" name="email" id="email" placeholder="Enter email id">
+    </div>
+     <!-- select type -->
+    <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+        <option value="Male">male</option>
+        <option value="Female" selected>female</option>
+        <option value="others">others</option>
+    </select>
+
+    </div>
+    <!-- number type -->
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+    </div>
+    <!-- date type -->
+    <div>
+        <label for="birthdate">birthdate</label>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <!-- radio type -->
+    <div>
+        <label for="Wieght">Wieght</label>
+        <input type="radio" name="wieght" id="wieght"> 10-50Kg
+        <input type="radio" name="wieght" id="wieght" checked> 50-75Kg
+        <input type="radio" name="wieght" id="wieght"> 75-100Kg
+    </div>
+    <!-- check box type -->
+    <div>
+        <label for="strength">strength</label>
+        <input type="checkbox" name="strength" id="strength"> Strong
+        <input type="checkbox" name="strength" id="strength" checked> Medium
+        <input type="checkbox" name="strength" id="strength"> Weak
+
+    </div>
+    <!-- Input submit type -->
+    <div>
+        <input type="submit" value="submit">
+    </div>
+
+    <!-- button submit -->
+    <div>
+        <button type="reset">Reset</button>
+    </div>
+
+
+   </form> 
+    
+</body>
+</html>
